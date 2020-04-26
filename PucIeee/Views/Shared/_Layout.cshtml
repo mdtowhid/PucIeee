@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="~/Content/Responsive.css" />
+</head>
+<body>
+    <div class="container_wrapper" id="headerBackground" style="background: #5F5F5F;">
+
+        <header class="header">
+            <div class="pucIeeeLogo float_left">
+                <h2>PUC IEEE</h2>
+            </div>
+            <nav class="float_right" id="main_nav_bar">
+                <ul class="topMenu">
+                    <li><a href="#"><span><i class="fa fa-home"></i></span> Home</a></li>
+                    <li><a href="#"><span><i class="fa fa-calendar-alt"></i></span> Our Events</a></li>
+                    <li><a href="#"><span><i class="fa fa-users"></i></span> Our Team</a></li>
+                    <li><a href="#"><span><i class="fa fa-envelope"></i></span> Contact Us</a></li>
+                    <li class="toggle_drop_down">
+                        <a href="#">@*<span><i class="fa fa-info"></i></span>*@About <span><i class="fa fa-caret-down"></i></span></a>
+
+                        <ul class="dropdown_menu">
+                            <li><a href="#"><span><i class="fa fa-"></i></span> About IEEE</a></li>
+                            <li><a href="#"><span><i class="fa fa-"></i></span> About Region 10</a></li>
+                            <li><a href="#"><span><i class="fa fa-"></i></span> IEEE Bangladesh Branch</a></li>
+                            <li><a href="#"><span><i class="fa fa-"></i></span> Home</a></li>
+                            <li><a href="#"><span><i class="fa fa-"></i></span> Home</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="toggle_menu hide_lg_devices">
+                <ul><li><a><i class="fa fa-bars"></i></a></li></ul>
+            </div>
+
+        </header>
+
+    </div>
+    <div class="clear"></div>
+    <div class="container_wrapper">
+        <div class="container_fixed fix">
+            @RenderBody()
+        </div>
+    </div>
+    <div class="container_wrapper fix footerBg">
+        <div class="container_fixed fix">
+            <footer class="footer fix">
+                <p>&copy; @DateTime.Now.Year - PUCIeee</p>
+            </footer>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script>
+        $(document).ready(function () {
+            var header = $('.header');
+            var pucLogo = $('.pucIeeeLogo h2');
+            var headerBg = $('#headerBackground');
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 50) {
+                    header.addClass('shrinkNab');
+                    pucLogo.addClass('shrinkNabLogo');
+                    headerBg.addClass('headerBg');
+                    //$('.dropdown_menu').css({
+                    //    'margin-top': '-10px',
+                    //    //'background': 'rgba(0, 0, 0, 0.6)'
+                    //});
+                    //$('.toggle_menu').css({
+                    //    //'top': '8px'
+                    //});
+
+                } else {
+                    header.removeClass('shrinkNab');
+                    pucLogo.removeClass('shrinkNabLogo');
+                    //$('.dropdown_menu').css({
+                    //    'margin-top': '0',
+                    //    'background': '#5F5F5F'
+                    //});
+                    $('.toggle_menu').css({
+                        //'top': '18px'
+                    });
+                }
+            });
+
+            $('.toggle_menu').click(function () {
+                $('#main_nav_bar').toggleClass('show');
+            });
+
+            $('.toggle_drop_down').click(function () {
+                $('.dropdown_menu').toggleClass('show');
+            });
+        });
+    </script>
+</body>
+</html>

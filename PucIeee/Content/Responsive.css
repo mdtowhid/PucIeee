@@ -1,0 +1,359 @@
+﻿/*		Default Layout: 960px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+*/
+
+
+
+
+
+
+
+
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .membership_wrapper, .container_fixed {
+        width: 90%;
+}
+    .memberships {
+    columns: 3;
+    width: calc(100% - 10px);
+    padding: 20px 20px 20px;
+}
+    .membership_benefits {
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+
+    .container_fixed {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .o_hidden_sm {
+        overflow: hidden;
+    }
+
+    .hide_lg_devices {
+        display: none;
+    }
+
+    .hide_sm_devices {
+        display: none;
+    }
+
+    .show_lg_devices {
+        display: none;
+    }
+
+    .show_sm_devices {
+        display: block;
+    }
+
+    .float_right_none {
+        float: none;
+        display: none;
+    }
+    .float_right_no_sm {
+        float: none
+    }
+    .show {
+        display: block;
+    }
+
+    .top_header {
+        height: 80px;
+    }
+
+    .top_header_toggle_height {
+        height: 270px;
+        visibility: visible;
+        z-index: 2;
+    }
+
+    .logo {
+        width: 240px;
+        height: auto;
+        display: inline-block;
+        padding: 5px 0;
+        transition: .5s;
+    }
+
+    .menu {
+        opacity: 1;
+        visibility: visible;
+    }
+
+        .menu li {
+            float: none;
+            width: 100%;
+            /* ReSharper disable once InvalidValue */
+            display: grid;
+        }
+
+            .menu li a.active, .menu li a:hover {
+                background: #fff;
+                color: #000;
+            }
+
+            .menu li a:hover {
+                opacity: .5;
+            }
+
+    .toggle_about_ieee_menu {
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        font-size: 25px;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .toggle_about_ieee_pub_menu {
+        background: black;
+        width: 100%;
+        padding: 5px;
+        color: white;
+        font-size: 23px;
+        padding-left: 20px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .menu_main_navigation {
+        height: auto;
+        display: none;
+    }
+
+    .fixed_under_top_menu {
+        background: #226666;
+        height: auto;
+    }
+
+    .menu_main_navigation li {
+        float: none;
+        border-right: none;
+        position: relative;
+    }
+
+        .menu_main_navigation li a {
+            width: 100%;
+        }
+
+        .memberships {
+    columns: 2;
+}
+/*
+*:::::::::::::::::::::::::  
+*:::::::::::::::::::::::::
+*codes for .scrolled class
+*:::::::::::::::::::::::::
+*:::::::::::::::::::::::::
+*/
+
+    .scrolled .toggle_about_ieee_menu {
+        right: 10px;
+        top: 12px;
+    }
+
+    .scrolled_fixed_under_top_menu .menu_main_navigation {
+        height: auto;
+    }
+
+    .dropdown_menu {
+        width: 100%;
+        text-align: center;
+    }
+
+/*
+*:::::::::::::::::::::::::  
+*:::::::::::::::::::::::::
+*End of codes for .scrolled class
+*:::::::::::::::::::::::::
+*:::::::::::::::::::::::::
+*/
+
+    .what_say {
+        height: auto;
+        padding-bottom: 15px;
+    }
+
+        .what_say::before {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .what_say::before, .what_say::after {
+            width: 26px;
+            height: 30px;
+            line-height: 20px;
+            font-size: 36px;
+        }
+
+    .footer {
+        width: 95%;
+    }
+
+    .footer_menu {
+        width: 50%;
+    }
+    /*footer social menu*/
+    .social_menu {
+        width: ;
+    }
+
+    .about_logo {
+        width: 50%;
+        height: 150px;
+        transform: translate(50%, 10%);
+    }
+
+    .about_main_details {
+        width: 100%;
+        font-family: lato;
+        font-size: 17px;
+        text-align: justify;
+        padding: 20px;
+        padding-bottom: 20px;
+        margin-top: 27px;
+        padding-bottom: 6px;
+    }
+
+    /*29-01-19*/
+
+    .team_details{
+        width: 100%;
+        text-align: center;
+    }
+    .team_slides{
+        width: 100%;
+    }
+
+    .page_indicator {
+        float: initial;
+        width: auto;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: auto;
+        right: 0;
+        /* transform: translateY(-50%); */
+    }
+    .team_members_wrapper{
+        margin-top: 20px;
+        padding-top: 30px;
+        border-top: 1px solid #c3baba;
+        text-align: justify;
+    }
+
+    .team_imgBox {
+        width: calc(100% - 5%);
+    }
+
+    .team_member_details{
+        margin: 30px 0 60px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .team_member_details h2{
+        font-size: 1.7rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+
+}
+
+@media only screen and (min-width: 0) and (max-width: 480px) {
+    .footer {
+        width: 95%;
+    }
+
+    .footer_menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    .memberships {
+        columns: 1;
+    }
+
+    .footer_menu_wrapper {
+        columns: 1;
+        margin: 0 auto;
+    }
+    .d_section{
+        width: 100%;
+        height: calc(100% - 15%);
+    }
+
+    .d_modal_cancel{
+        right: 5px;
+        top: -7px;
+    }
+}
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+}

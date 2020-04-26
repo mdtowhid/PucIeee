@@ -1,0 +1,120 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="greets fix">
+    <h4 class="text-center">Welcome to PUC IEEE</h4>
+    <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+<hr/>
+<div class="main_area fix">
+    <div class="float_left sidebar_wrapper fix">
+        <aside class="single_sidebar fix">
+            
+            @using (Html.BeginForm())
+            {
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <div class="log_in col-md-12">
+                            <h4>Log in</h4>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input type="password" class="form-control" id="password" placeholder="Enter password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <button type="submit" id="login" class="btn btn-default btn-sm">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="form-group">
+                <div class="col-md-12">
+                    <a href="javascript:void(0)">Create a new account</a>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-12">
+                    <a href="javascript:void(0)">Request a new password</a>
+                </div>
+            </div>
+        </aside>
+        <aside class="single_sidebar fix">
+            <h5>Facebook & Twetter</h5>
+            <ul>
+                <li><a href="javascript:void(0)"><span><i class="fa fa-home"></i></span></a></li>
+                <li><a href="javascript:void(0)"><span><i class="fab fa-facebook-f"></i></span></a></li>
+                <li><a href="javascript:void(0)"><span><i class="fa fa-home"></i></span></a></li>
+                <li><a href="javascript:void(0)"><span><i class="fa fa-home"></i></span></a></li>
+                <li><a href="javascript:void(0)"><span><i class="fa fa-home"></i></span></a></li>
+            </ul>
+        </aside>
+        <aside class="single_sidebar fix">
+            <h5>And more</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+        </aside>
+    </div>
+
+    <div class="float_left fix">
+        <div class="main_content_wrapper fix">
+            
+            <div id="slider" class="fix">
+                <div class="slides">
+                    <img src="~/Images/img1.jpg" class="img-responsive" alt="img1" />
+                    <div class="slide_details">
+                        <h4>Puc Ieee</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="three_column_wrapper fix">
+                <div class="columns float_left fix">
+                    <h4 class="text-center"><i class="fas fa-university"></i></h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                    <a href="javascript:void(0)" class="read_more">
+                        Read more <span>
+                            <i class="fa fa-angle-double-right"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="columns float_left fix">
+                    <h4 class="text-center"><i class="fas fa-graduation-cap"></i></h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                    <a href="javascript:void(0)" class="read_more">
+                        Read more <span>
+                            <i class="fa fa-angle-double-right"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="columns float_left fix">
+                    <h4 class="text-center"><i class="fas fa-user-graduate"></i></h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                    <a href="javascript:void(0)" class="read_more">
+                        Read more <span>
+                            <i class="fa fa-angle-double-right"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="about_puc fix">
+                <div class="puc_detials fix">
+                    <h4>About PUC</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

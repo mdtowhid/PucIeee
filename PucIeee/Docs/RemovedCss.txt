@@ -1,0 +1,253 @@
+﻿
+    #main_nav_bar {
+        width: 100%;
+        display: none;
+    }
+
+    .dropdown_menu {
+        display: none;
+    }
+
+    .pucIeeeLogo {
+        padding-top: 5px;
+        margin-left: calc(100% - 97.59%);
+    }
+
+    .greets {
+        /*border-bottom: 1px solid #ccc;*/
+    }
+
+        .greets p {
+            line-height: 30px;
+            font-size: 100%;
+            text-align: justify !important;
+        }
+
+    .sidebar_wrapper {
+        display: none;
+    }
+
+    .main_content_wrapper {
+        margin-left: 0;
+        width: 100%;
+    }
+
+
+
+    #slider {
+        width: 100%;
+        position: relative;
+        height: 190px;
+    }
+
+    .slides {
+        width: 100%;
+        height: 100%;
+    }
+
+        .slides img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .slides .slide_details {
+            padding: 5px;
+            width: 100%;
+        }
+
+            .slides .slide_details p {
+                display: inline;
+            }
+
+    .header {
+        width: 100%;
+    }
+
+    .read_more {
+        display: inherit;
+        text-align: center;
+        margin-left: 0;
+        transform: translateX(0);
+    }
+
+    .three_column_wrapper {
+        border-bottom: 1px solid #fbf1f1;
+    }
+
+    .columns {
+        width: 32.33%;
+        margin-right: 1%;
+        margin-bottom: 20px;
+    }
+
+    .topMenu {
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+        background: rgba(0,0,0,0.5);
+        top: 55px;
+    }
+
+        .topMenu li {
+            float: none;
+        }
+
+            .topMenu li a {
+                display: block;
+                padding: 10px 10px;
+                color: white;
+                overflow: hidden;
+                color: white;
+                transition: .5s;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+            .topMenu li a:after {
+                border-top: 5px solid #ccc;
+                width: 50%;
+                left: 25%;
+                transform: scale(0);
+                transition: .5s linear;
+            }
+
+    .dropdown_menu {
+        opacity: 1;
+        position: fixed;
+        background: #5F5F5F;
+        z-index: 1;
+        transform: translateY(0);
+        transition: 1s;
+        width: 100%;
+        background: rgba(0,0,0,0.5);
+        border-top: 1px solid #fff;
+    }
+
+    .topMenu li:hover .dropdown_menu {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+	team D page
+
+
+	
+
+.t_section {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.t_w {
+    width: 1100px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.t_l {
+    width: 40%;
+    height: auto;
+    float: left;
+}
+
+.t_r {
+    width: calc(100% - 40%);
+    height: auto;
+    float: right;
+    position: relative;
+}
+
+.t_h {
+    text-align: center;
+    margin: 20px 20px 20px;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+}
+.team_slider {
+    width: calc(100% - 50%);
+    margin: 0 auto;
+    height: 600px;
+    position: relative;
+    transition: .5s all ease;
+}
+
+.img_box {
+    width: calc(100% - 56%);
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -90px;
+    z-index: 8;
+    overflow: auto;
+}
+
+    .img_box img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        z-index: 3;
+    }
+.t_box {
+    width: 350px;
+    height: 410px;
+    margin: 0 auto;
+    position: relative;
+    background: #fbfbfb;
+}
+        .t_box span {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 150px;
+            background: #9A0089;
+            top: -100%;
+            z-index: 1;
+            left: 0;
+            border-radius: 0 0 40% 40%;
+        }
+.t_details{
+    position: absolute;
+    top: 220px;
+    width: 100%;
+    text-align: center;
+    margin: 10px 10px 10px;
+}
+.t_profile_link {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: #9A0089;
+    bottom: -100%;
+    left: 0;
+}
+
+.team_slider:hover .t_box span {
+    top: 0;
+    transition: .5s all ease;
+}
+.team_slider:hover .img_box {
+    border: 5px solid #9A0089;
+}
+
+.team_slider:hover .t_profile_link {
+    bottom: 0;
+    transition: .5s all ease;
+}
+
+.page_indicator_override {
+    position: absolute;
+    background: red;
+    width: 50px;
+    right: 0;
+    top: calc(100% - 65%);
+}
+
+
+
+///end team D page

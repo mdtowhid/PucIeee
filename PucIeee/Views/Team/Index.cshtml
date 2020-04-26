@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "IEEE PUC Teams";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+@Html.Partial("~/views/shared/_teamMembers.cshtml", null)
+<div class="team_member_bottom"></div>
+@*<div class="loading_page" id="loading_wrapper">
+    <div class="loader_box">
+    </div>
+</div>*@
+
+<script>
+    window.onload = function () {
+        setTimeout(function () {
+            var y = document.getElementById("loading_wrapper");
+            y.style.display = "block";
+        }, 0000);
+
+        setTimeout(function () {
+            var y = document.getElementById("loading_wrapper");
+            y.style.display = "none";
+        }, 1200);
+    };
+</script>

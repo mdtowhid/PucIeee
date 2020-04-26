@@ -1,0 +1,161 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@*<div class="container_wrapper fix">
+    <div class="container_fixed fix">
+        <div class="content">
+            <div class="float_left ieee_logo">
+                <img src="~/Images/Untitled-3.png"/>
+            </div>
+            <div class="float_right some_details">
+                <h2>IEEE PUC branch</h2>
+                <p>Engineering is the creative application of scientific principles to design and develop. It is broader than writing a code or designing a circuit. In reality, nontechnical competencies are just as critical to engineers as their technical training.</p>
+            </div>
+        </div>
+    </div>
+</div>*@
+<div class="container_wrapper slideBg fix">
+    <div class="container_fixed fix">
+        @*<h3>Change Here</h3>*@
+        <div id="slider_wrapper" class="fix">
+            <div class="slider_indicator">
+                <ul>
+                    <li class="indicator" onclick="currentSlide(1)">1</li>
+                    <li class="indicator" onclick="currentSlide(2)">2</li>
+                    <li class="indicator" onclick="currentSlide(3)">3</li>
+                    <li class="indicator" onclick="currentSlide(4)">4</li>
+                </ul>
+            </div>
+
+            <div class="slide_box">
+                <h1 class="slidebox_logo"><i class="fas fa-university"></i>
+                </h1>
+                <h2>IEEE Branch</h2>
+                <p>Congratulations to all of the members of the IEEE PUC Student Branch! I love reading about all of your achievements in Abozzo. I enjoy reading about the awards you’ve won and the activities you hold like industrial tours, the FREEDM Concept seminar, and STEM events for children. I wish you the best of luck and continued success in your efforts!</p>
+            </div>
+
+            <div class="slide_box">
+                <h1 class="slidebox_logo">
+                    <i class="fas fa-graduation-cap"></i>
+                </h1>
+                <h2>PUC IEEE Branch</h2>
+                <p>“Always hang-out with people smarter than you” – PUC IEEE is a pack of smart volunteers with myriad of expertise. Unwavering dedication, engaging activities and persistent drive for excellence set them apart. They are an exemplary student branch not only in Bangladesh but also in the Region 10. Wish they will evolve continually into new heights.</p>
+            </div>
+
+            <div class="slide_box">
+                <h1 class="slidebox_logo">
+                    <i class="fas fa-user-graduate"></i>
+                </h1>
+                <h2>IEEE Region 10</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+
+            <div class="slide_box">
+                <h1 class="slidebox_logo">
+                    <i class="fas fa-university"></i>
+                </h1>
+                <h2>IEEE Branch</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+    </div>
+    <marquee onmouseover="this.stop()" onmouseout="this.start()">Premier University IEEE brach region 10 | About Region 10 | About IEEE</marquee>
+</div>
+
+<div class="container_wrapper main_article fix">
+    <div class="container_fixed main_article_fixed fix">
+        <p>
+            Engineering is the creative application of scientific principles to design and develop. It is broader than writing a code or designing a circuit. In reality, nontechnical competencies are just as critical to engineers as their technical training. The IEEE-USA Student Professional Awareness Activities (SPAA) are oriented to enhance the leadership, career, and professional development skills of engineering students. Student Professional Awareness Experience, SPAx builds on the longstanding legacy of Student Professional Awareness Conferences and Ventures, in an effort to address the highly dynamic world we live in today; aiming to enlighten the minds of the future leaders, in hope of securing a lifelong career in engineering.
+            <br />
+            <br />
+            Being a trademark in both membership development and organizing professional and technical activities, on 1st December, 2018; IEEE AIUB Student Branch is going to take part in the endeavor and organize IEEE Student Professional Awareness Venture (SPAVe) for the third time in the history of Bangladesh Section. In our continual quest to provide an even better experience and value to the student members of IEEE, a new effort was made to listen and understand the program from the student’s perspective. This professional venture will include series of professional, workshops, seminars and technical talks focused on Professional Integrity, conducting plenary talks on timely topics and allowing students to understand the ever-changing professional work and also developing skills that would not be taught in classrooms needed to pursue a career as an exemplary individual.
+        </p>
+    </div>
+</div>
+
+@*<div class="container_wrapper fix" style="height: 400px">
+    <div class="container_fixed fix">
+        <h3>Members</h3>
+        <div class="team_section fix">
+            <div class="teams float_left"></div>
+            <div class="teams float_left"></div>
+            <div class="teams float_left"></div>
+        </div>
+        <div class="team_section fix">
+            <div class="teams float_left"></div>
+            <div class="teams float_left"></div>
+            <div class="teams float_left"></div>
+        </div>
+    </div>
+</div>*@
+
+
+<div class="container_wrapper" style="background: #f4f4f4;">
+    <div class="container_fixed">
+        <div class="what_say">
+            <h4>What say people about us</h4>
+            <img src="~/Images/img_avatar3.png" />
+            <p style="width: 80%; margin: 0 auto; padding-top: 10px;">Congratulations to all of the members of the IEEE PUC Student Branch! I love reading about all of your achievements in Abozzo. I enjoy reading about the awards you’ve won and the activities you hold like industrial tours, the FREEDM Concept seminar, and STEM events for children. I wish you the best of luck and continued success in your efforts!</p>
+            <a href="#" class="btn_commenter">Some one famous commenter, CEO, Region 10</a>
+        </div>
+    </div>
+</div>
+
+<div class="container_wrapper fix section1" style="">
+    <div class="container_fixed fix">
+        <div class="fix moving_bg_img">
+            <h2>More informations</h2>
+            <p>Being a trademark in both membership development and organizing professional and technical activities, on 1st December, 2018.Being a trademark in both membership development and organizing professional and technical activities, on 1st December, 2018.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide_box");
+        var indicators = document.getElementsByClassName("indicator");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < indicators.length; i++) {
+            indicators[i].className = indicators[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        indicators[slideIndex - 1].className += " active";
+    }
+</script>
+
+
+<script>
+    $(document).ready(function() {
+        $(window).scroll(function () {
+            var section = $('.section1').position();
+            var scrollbarPosition = $(window).scrollTop();
+            if (scrollbarPosition > 700) {
+                //$('.section1').addClass('scrolled');
+                $('.section1').css({
+                    'background-position-y':  scrollbarPosition / 18 + "px",
+                    'background-size': 'cover',
+                    'transition': '.7s'
+                });
+
+            } else {
+                $('.section1').css({
+                    'background-position': 'initial',
+                    'background-size': 'cover'
+                });
+            }
+        });
+    });
+</script>

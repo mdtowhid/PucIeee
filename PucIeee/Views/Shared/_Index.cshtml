@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+<body>
+    @*<div class="container_wrapper fix" style="background: #000">
+            <div class="container_fixed fix">
+                <ul class="menu_main_navigation float_left">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Publications</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Achivement</a></li>
+                    <li><a href="#">Our Team</a></li>
+                </ul>
+                <ul class="menu_main_navigation float_right">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Publications</a></li>
+                </ul>
+            </div>
+        </div>*@
+
+    <div class="container_wrapper o_hidden_sm">
+        <div class="container_fixed ">
+            <header class="top_header">
+                <div class="float_left">
+                    <a href="#" class="logo"><img src="~/Images/puc_logo2.jpg" /></a>
+                </div>
+                <!-- Toggle icon-->
+                <div class="float_right hide_lg_devices show_sm_devices">
+                    <span class="toggle_about_ieee_menu">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </div>
+                <nav class="float_right float_right_none">
+                    <ul class="menu">
+                        <li><a href="#" class="active">My IEEE</a></li>
+                        <li><a href="#" class="">IEE</a></li>
+                        <li><a href="#">IEEE Region 10</a></li>
+                        <li><a href="#">IEEE Bangladesh Section</a></li>
+                        <li><a href="#">IEEE Explore Digital Library</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+    <div class="container_wrapper fixed_under_top_menu o_hidden_sm" style="">
+        <!-- Toggle icon-->
+        <div class="float_right hide_lg_devices show_sm_devices toggle_about_ieee_pub_menu">
+            <span class="">
+                <i class="fas fa-bars"></i>
+            </span>
+        </div>
+        <div class="container_fixed o_hidden_sm">
+            <ul class="menu_main_navigation">
+                <li><a href="~/home/index/" class="active">Home</a></li>
+                <li>
+                    <a href="#">About <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown_menu">
+                        <li><a href="~/about/aboutIeee/">About IEEE</a></li>
+                        <li><a href="~/about/aboutRegionTen/">IEEE Region 10</a></li>
+                        <li><a href="~/about/IeeeBangladeshSection/">IEEE Bangladesh Section</a></li>
+                        <li><a href="~/about/PubStudent/">IEEE PUB Student Branch</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Affinity Groups <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown_menu">
+                        <li><a href="#">Women in Engineering</a></li>
+                        <li><a href="#">Some Elemnts</a></li>
+                        <li><a href="#">Some Elemnts</a></li>
+                        <li><a href="#">Some Elemnts</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Publications</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="~/Home/Membership/">Membership</a></li>
+                <li><a href="#">Achivement</a></li>
+                <li><a href="~/team/index/">Our Team</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    
+
+
+<div class="loading_page" id="d_loading_wrapper" style="display: none">
+    <div class="">
+        <span class="d_modal_cancel">&times;</span>
+        <div class="d_section fix">
+            <div class="d_img_box">
+                <img src="~/Images/t1.jpg"/>
+            </div>
+            <div class="d_details">
+                <h3>Mohammad Towhidul Islam</h3>
+                <p><mark style="padding: 5px 10px; padding-bottom: 7px;">Developer at</mark> <a href="https://www.webschools.com.bd" target="_blank">Webschools.com.bd</a></p>
+            </div>
+            <ul class="d_social_area">
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+            </ul>
+            <div class="d_footer"></div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <div class="container_wrapper fix footerBg">
+        <div class="container_fixed fix">
+            <footer class="fix footer">
+                <h4 class="footer_heading">About PUC IEEE Branch </h4>
+                <ul class="footer_social_menu">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+
+                <div class="footer_menu_wrapper ">
+                    <ul class="footer_menu">
+                        <li><h4>About PUC</h4></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Achivement</a></li>
+                        <li><a href="#">Our Team</a></li>
+                    </ul>
+
+                    <ul class="footer_menu">
+                        <li><h4>About PUC</h4></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="~/Home/Membership/">Membership</a></li>
+                        <li><a href="#">Achivement</a></li>
+                        <li><a href="#">Our Team</a></li>
+                    </ul>
+                </div>
+                
+                <hr style="background: #424a43;" />
+                <div style="text-align: center; color: #5D7360; margin-top: 20px;">
+                    <div class="" style="width: 100%; height: 110px;">
+                        <h4>PUC IEEE mission is to</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                        <p>Copy &copy; all rights reserved @DateTime.Now.Year - IEEE PUCB </p>
+                    </div>
+                
+            
+                    <div class="d_wrapper">
+                        <button class="developer_button">Developed By</button>
+                    </div>
+                </div>
+            </footer>
+            
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scrollbarPosition = $(window).scrollTop();
+                if (scrollbarPosition > 170) {
+                    $('.top_header').addClass('scrolled');
+                    $('.fixed_under_top_menu').addClass('scrolled_fixed_under_top_menu');
+                } else {
+                    $('.top_header').removeClass('scrolled');
+                    $('.fixed_under_top_menu')
+                        .removeClass('scrolled_fixed_under_top_menu');
+                }
+            });
+
+            $('.toggle_about_ieee_menu').click(function () {
+                $('.top_header').toggleClass('top_header_toggle_height');
+                $('.float_right_none').toggleClass('show');
+            });
+
+            $('.toggle_about_ieee_pub_menu').click(function () {
+                $('.menu_main_navigation').toggleClass('show');
+            });
+
+            $('.menu_main_navigation li').on({
+                'click': function () {
+                    $(this).siblings().removeClass('active');
+                    $(this).addClass('active');
+                }
+            }); 
+
+            $('.developer_button').click(function () {
+                $('#d_loading_wrapper').fadeIn("slow");
+            });
+            $('.d_modal_cancel').click(function () {
+                $('#d_loading_wrapper').fadeOut("slow");
+            });
+
+        });
+    </script>
+</body>
+</html>
